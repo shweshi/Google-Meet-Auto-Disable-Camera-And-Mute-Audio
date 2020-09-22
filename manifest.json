@@ -1,0 +1,24 @@
+{
+  "name": "Google Meet: Auto Disable Camera And Mute Audio",
+  "version": "1.0.0",
+  "description": "Defaults camera to off, and mute audio when joining a Google Meet meeting",
+  "manifest_version": 2,
+  "permissions": [],
+  "content_scripts": [
+    {
+      "js": [
+        "action.js"
+      ],
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+  "browser_action": {}
+}
